@@ -1,0 +1,102 @@
+div,
+h3,
+button,
+i,
+p,
+dl,
+dd,
+dt,
+b {
+  margin: 0;
+  padding: 0;
+}
+h3 {
+  font-family: "微软雅黑";
+  font-size: 14px;
+  color: #007ac6;
+  margin-bottom: 12px;
+}
+button {
+  font-family: "微软雅黑";
+  font-size: 12px;
+}
+button i {
+  padding: 0 5px 0 2px ;
+}
+.container {
+  width: 840px;
+  height: 173px;
+  border: 1px #e2e2e2 solid;
+  margin: 50px auto ;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  overflow: hidden;
+  background: url(../image/i.png) right bottom no-repeat;
+}
+.lbox {
+  width: 374px;
+  height: 120px;
+  margin: 28px 0 0 21px;
+  float: left;
+  position: relative;
+}
+.lbox .bom-box {
+  position: absolute;
+  bottom: 0;
+  float: left;
+}
+.lbox .bom-box button,
+.lbox .bom-box div,
+.lbox .bom-box p {
+  float: left;
+}
+.lbox .bom-box #pro {
+  width: 150px;
+  margin-bottom: 0;
+}
+.lbox .bom-box button {
+  margin-right: 10px;
+}
+.lbox .bom-box p {
+  width: 255px;
+  height: 26px;
+  font: 12px/26px "微软雅黑";
+  color: #000;
+}
+.lbox .bom-box p b {
+  color: #e66700;
+}
+.rbox {
+  width: 253px;
+  height: 75%;
+  float: right;
+  margin: 28px 0 0 0;
+}
+.rbox dl {
+  width: 165px;
+  height: 120px;
+  float: left;
+  font-family: "微软雅黑";
+  font-size: 13px;
+}
+.rbox dl dd {
+  width: 60px;
+  float: left;
+}
+.rbox dl dt {
+  width: 95px;
+  float: right;
+}
+.rbox dl dt i {
+  margin-left: 5px;
+}
+.rbox dl #HR {
+  border-top: 1px dashed #ededed;
+  margin-bottom: 5px;
+  width: 165px;
+}
+.rbox dl b {
+  color: #e66700;
+}
+/*# sourceMappingURL=lianxi.css.map */

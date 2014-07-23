@@ -1,0 +1,61 @@
+*{margin: 0;padding: 0;}
+header{width: 100%;height: 60px;}
+header .left-nav{width: 50%;height: 100%;background-color: #31d7ff;float: left;overflow: hidden;}
+header .left-nav p{font:18px/60px "微软雅黑";color:#000;float: right;margin-right: 50px;width: 200px;}
+header .left-nav p:after{
+    content: "正价40元";
+    display: block;
+    font:12px/15px "宋体";
+    color:#ffe618;
+    width: 53px;
+    height: 15px;
+    position: relative;
+    top:-36px;
+    left: 135px;
+    background:#000;
+    text-align: center;
+}
+
+header .right-nav{width: 50%;height: 100%;background-color: #e6323e;float: right;overflow: hidden;}
+header .right-nav p{font:18px/60px "微软雅黑";color:#fff;float: left;margin-left: 50px;}
+header .right-nav p:after{
+    content: "正价80元";
+    display: block;
+    font:12px/15px "宋体";
+    color:#fe494e;
+    width: 53px;
+    height: 15px;
+    position: relative;
+    top:-36px;
+    left: 135px;
+    background:#fff;    
+    text-align: center;
+}
+
+
+.stripes {
+    -webkit-background-size: 50px 50px;
+    -moz-background-size: 50px 50px;
+    background-size: 50px 50px; /* 控制条纹的大小 */
+    /*
+    -moz-box-shadow: 1px 1px 8px gray;
+    -webkit-box-shadow: 1px 1px 8px gray;
+    box-shadow: 1px 1px 8px gray;*/
+}
+.angled-135 {
+    background-color: #c16;
+    background-image: -webkit-gradient(linear, 0 0, 100% 100%,
+                            color-stop(.25, rgba(255, 255, 255, .2)), color-stop(.25, transparent),
+                            color-stop(.5, transparent), color-stop(.5, rgba(255, 255, 255, .2)),
+                            color-stop(.75, rgba(255, 255, 255, .2)), color-stop(.75, transparent),
+                            to(transparent));
+    background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,
+                        transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,
+                        transparent 75%, transparent);
+    background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,
+                        transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,
+                        transparent 75%, transparent);
+    background-image: linear-gradient(-45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,
+                        transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,
+                        transparent 75%, transparent);
+}

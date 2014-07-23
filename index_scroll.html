@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="shortcut icon" href="../images/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>滚动监听!!!</title>
+	<!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Custom styles for this template -->
+    <link href="css/docs.css" rel="stylesheet">
+    <link href="http://cdn.bootcss.com/highlight.js/7.3/styles/github.min.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.min.js"></script>
+        <script src="http://cdn.bootcss.com/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<div class="bs-docs-section">
+    <div class="page-header">
+      <h1 id="scrollspy">滚动监听 <small>scrollspy.js</small></h1>
+    </div>
+
+
+    <h2 id="scrollspy-examples">案例</h2>
+    <p>滚动监听插件可以根据滚动条的位置自动更新所对应的导航标记。你可以试试滚动这个页面，看看左侧导航的变化。</p>
+    <div class="bs-example">
+      <nav id="navbar-example2" class="navbar navbar-default navbar-static" role="navigation">
+        <div class="navbar-header">
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-js-navbar-scrollspy">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project Name</a>
+        </div>
+        <div class="collapse navbar-collapse bs-js-navbar-scrollspy">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#fat">@fat</a></li>
+            <li class=""><a href="#mdo">@mdo</a></li>
+            <li class="dropdown">
+              <a href="#" id="navbarDrop1" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="navbarDrop1">
+                <li class=""><a href="#one" tabindex="-1">one</a></li>
+                <li class=""><a href="#two" tabindex="-1">two</a></li>
+                <li class="divider"></li>
+                <li class=""><a href="#three" tabindex="-1">three</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div data-spy="scroll" data-target="#navbar-example2" data-offset="0" class="scrollspy-example">
+        <h4 id="fat">@fat</h4>
+        <p>Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.</p>
+        <h4 id="mdo">@mdo</h4>
+        <p>Veniam marfa mustache skateboard, adipisicing fugiat velit pitchfork beard. Freegan beard aliqua cupidatat mcsweeney's vero. Cupidatat four loko nisi, ea helvetica nulla carles. Tattooed cosby sweater food truck, mcsweeney's quis non freegan vinyl. Lo-fi wes anderson +1 sartorial. Carles non aesthetic exercitation quis gentrify. Brooklyn adipisicing craft beer vice keytar deserunt.</p>
+        <h4 id="one">one</h4>
+        <p>Occaecat commodo aliqua delectus. Fap craft beer deserunt skateboard ea. Lomo bicycle rights adipisicing banh mi, velit ea sunt next level locavore single-origin coffee in magna veniam. High life id vinyl, echo park consequat quis aliquip banh mi pitchfork. Vero VHS est adipisicing. Consectetur nisi DIY minim messenger bag. Cred ex in, sustainable delectus consectetur fanny pack iphone.</p>
+        <h4 id="two">two</h4>
+        <p>In incididunt echo park, officia deserunt mcsweeney's proident master cleanse thundercats sapiente veniam. Excepteur VHS elit, proident shoreditch +1 biodiesel laborum craft beer. Single-origin coffee wayfarers irure four loko, cupidatat terry richardson master cleanse. Assumenda you probably haven't heard of them art party fanny pack, tattooed nulla cardigan tempor ad. Proident wolf nesciunt sartorial keffiyeh eu banh mi sustainable. Elit wolf voluptate, lo-fi ea portland before they sold out four loko. Locavore enim nostrud mlkshk brooklyn nesciunt.</p>
+        <h4 id="three">three</h4>
+        <p>Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.</p>
+        <p>Keytar twee blog, culpa messenger bag marfa whatever delectus food truck. Sapiente synth id assumenda. Locavore sed helvetica cliche irony, thundercats you probably haven't heard of them consequat hoodie gluten-free lo-fi fap aliquip. Labore elit placeat before they sold out, terry richardson proident brunch nesciunt quis cosby sweater pariatur keffiyeh ut helvetica artisan. Cardigan craft beer seitan readymade velit. VHS chambray laboris tempor veniam. Anim mollit minim commodo ullamco thundercats.
+        </p>
+      </div>
+    </div><!-- /example -->
+
+
+    <h2 id="scrollspy-usage">用法</h2>
+
+    <h3>通过data属性</h3>
+    <p>通过为需要监听的页面元素（一般是<code>&lt;body&gt;</code>）添加<code>data-spy="scroll"</code>就可很轻松的为顶部导航条添加滚动监听功能。然后为其添加<code>data-target</code>属性，此属性的值为任何Bootstrap中<code>.nav</code>组件的父元素的ID或class。</p>
+<div class="highlight">
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">body</span> <span class="attribute">data-spy</span>=<span class="value">"scroll"</span> <span class="attribute">data-target</span>=<span class="value">".navbar-example"</span>&gt;</span>
+  ...
+  <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"navbar-example"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"nav nav-tabs"</span>&gt;</span>
+      ...
+    <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
+  <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+  ...
+<span class="tag">&lt;/<span class="title">body</span>&gt;</span></code></pre>
+
+</div>
+
+    <h3>通过JavaScript</h3>
+    <p>通过JavaScript启动滚动监听：</p>
+<div class="highlight">
+<pre><code class="language-js ruby"><span class="variable">$(</span><span class="string"><span class="string">'body'</span></span>).scrollspy({ <span class="symbol">target:</span> <span class="string"><span class="string">'.navbar-example'</span></span> })</code></pre>
+
+</div>
+
+    <div class="bs-callout bs-callout-danger">
+      <h4>导航链接地址必须有对应的目标</h4>
+      <p>导航条内的链接地址必须有对应的页面元素具有同样的ID值。例如，<code>&lt;a href="#home"&gt;home&lt;/a&gt;</code>必须对应DOM中例如<code>&lt;div id="home"&gt;&lt;/div&gt;</code>。</p>
+    </div>
+
+    <h3>方法</h3>
+    <h4>.scrollspy('refresh')</h4>
+    <p>使用滚动监听插件时，每当页面中从DOM中增加或删除页面元素时，都需要调用此方法以，如下：</p>
+<div class="highlight">
+<pre><code class="language-js php">$(<span class="string"><span class="string">'[data-spy="scroll"]'</span></span>).each(<span class="function"><span class="keyword"><span class="function"><span class="keyword">function</span></span></span><span class="function"> <span class="params"><span class="params">()</span></span> {</span></span>
+  <span class="keyword"><span class="keyword">var</span></span> <span class="variable">$spy</span> = $(<span class="keyword"><span class="keyword">this</span></span>).scrollspy(<span class="string"><span class="string">'refresh'</span></span>)
+})</code></pre>
+
+</div>
+
+
+    <h3>选项</h3>
+    <p>可以将选项通过data属性或JavaScript传递。对于data属性，需要将选项名称放到<code>data-</code>之后，例如<code>data-offset=""</code>。</p>
+    <div class="table-responsive">
+      <table class="table table-bordered table-striped">
+        <thead>
+         <tr>
+           <th style="width: 100px;">名称</th>
+           <th style="width: 100px;">类型</th>
+           <th style="width: 50px;">默认值</th>
+           <th>描述</th>
+         </tr>
+        </thead>
+        <tbody>
+         <tr>
+           <td>offset</td>
+           <td>number</td>
+           <td>10</td>
+           <td>Pixels to offset from top when calculating position of scroll.</td>
+         </tr>
+        </tbody>
+      </table>
+    </div><!-- ./bs-table-responsive -->
+
+    <h3>事件</h3>
+    <div class="table-responsive">
+      <table class="table table-bordered table-striped">
+        <thead>
+         <tr>
+           <th style="width: 150px;">事件类型</th>
+           <th>描述</th>
+         </tr>
+        </thead>
+        <tbody>
+         <tr>
+           <td>activate.bs.scrollspy</td>
+           <td>当滚动监听插件将某个元素置为active时，此事件被触发。</td>
+        </tr>
+        </tbody>
+      </table>
+    </div><!-- ./bs-table-responsive -->
+<div class="highlight">
+<pre><code class="language-js javascript">$(<span class="string"><span class="string">'#myScrollspy'</span></span>).on(<span class="string"><span class="string">'activate.bs.scrollspy'</span></span>, <span class="function"><span class="keyword"><span class="function"><span class="keyword">function</span></span></span><span class="function"> <span class="params"><span class="params">()</span></span> {</span></span>
+  <span class="comment"><span class="comment">// do something…</span></span>
+})</code></pre>
+
+</div>
+</div>
+
+
+  	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

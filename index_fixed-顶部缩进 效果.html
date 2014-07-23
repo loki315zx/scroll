@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="shortcut icon" href="../images/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>index</title>
+	<!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap1.css">
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="css/fixed-top.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.min.js"></script>
+        <script src="http://cdn.bootcss.com/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+
+    </head>
+<body style="height:4000px;">
+  <header id="header" class="header header--fixed hide-from-print animated slideDown" role="banner">
+    <div class="container">
+    
+        <nav id="nav" class="nav-wrapper" role="navigation">
+            <ul class="nav nav--main">
+                <li class="nav__item ">
+                    <a class="header__link subdued" href="#">
+                        <span aria-hidden="true" class="icon icon--github"></span>
+                        <span class="complimentary push--left">GitHub</span>
+                    </a>
+                </li>
+                <li class="nav__item ">
+                    <a class="header__link subdued" href="#">
+                        <span aria-hidden="true" class="icon icon--twitter"></span>
+                        <span class="complimentary push--left">@WickyNilliams</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        
+        <a href="#" class="brand header__link">
+            <b class="brand__forename">Headroom</b><b class="brand__surname">.js</b>
+        </a>
+    </div>
+  </header>
+  <a class="btt btn btn--plain hide-from-print slide slide--reset" href="#" id="btt">Top <i class="icon icon--up"></i></a>
+  <script src="js/headroom.js"></script>
+  <script>
+    (function() {
+        var header = new Headroom(document.querySelector("#header"), {
+            tolerance: 0,
+            offset : 0,
+            classes: {
+              initial: "animated",
+              pinned: "slideDown",//slideDown,flipInX,bounceInDown,swingInX
+              unpinned: "slideUp"//slideUp,flipOutX,bounceOutUp,swingOutX
+            }
+        });
+        header.init();
+
+        var bttHeadroom = new Headroom(document.getElementById("btt"), {
+            tolerance : 0,
+            offset : 0,
+            classes : {
+                initial : "slide",
+                pinned : "slide--reset",
+                unpinned : "slide--down"
+            }
+        });
+        bttHeadroom.init();
+    }());
+  </script>
+
+
+
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

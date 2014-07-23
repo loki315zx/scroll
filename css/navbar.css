@@ -1,0 +1,21 @@
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.navbar {  margin-bottom: 20px;}
+
+.navbar-nav li a{font-size:16px;}
+
+.dropdown-toggle:visited .caret,.dropdown-toggle:hover .caret{ 
+	transform: rotate(180deg);
+	-ms-transform: rotate(180deg);		/* IE 9 */
+	-webkit-transform: rotate(180deg);	/* Safari and Chrome */
+	-o-transform: rotate(180deg);		/* Opera */
+	-moz-transform: rotate(180deg);	
+}
+.dropdown-toggle .caret{
+    -webkit-transition: all .2s ease-in-out;  
+    -moz-transition: all .2s ease-in-out;  
+    -o-transition: all .2s ease-in-out;  
+}
